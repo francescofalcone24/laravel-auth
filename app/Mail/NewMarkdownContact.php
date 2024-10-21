@@ -27,7 +27,7 @@ class NewMarkdownContact extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'New Markdown Contact',
+            subject: 'Nuova Email dal portfolio',
         );
     }
 
