@@ -63,8 +63,9 @@ class projectController extends Controller
         $data['date'] = now();
         $data['slug'] = Str::slug($request->name_project, '-');
         if ($request->has('img')) {
-
-            $img_path = Storage::put('img', $request['img']);
+            // una volta online, storage:put non funziona
+            //$img_path = Storage::put('img', $request['img']);
+            $img_path = $request->file('img')->store('img', 'public');
             $data['img'] = $img_path;
         }
         //CREO L'OGGETTO
