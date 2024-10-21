@@ -1,5 +1,5 @@
 <x-mail::message>
-	# Ciao admin!
+	# Ciao Francesco!
 
 	Hai ricevuto un nuovo messaggio, ecco qui i dettagli:
 	Nome: {{ $lead->name }}
@@ -13,5 +13,5 @@
 
 
 	Thanks,
-	{{ config('app.name') }}
+	Il tuo Portfolio
 </x-mail::message>
